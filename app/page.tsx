@@ -1,7 +1,7 @@
 export default function Home() {
   return (
     <div>
-      <h1>Clarity SEO</h1>
+      <h1>Delivering high quality SEO reports.</h1>
     </div>
   ) 
 }
