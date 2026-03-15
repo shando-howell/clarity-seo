@@ -4,8 +4,8 @@ import { internalAction, action } from "./_generated/server";
 import { v } from "convex/values";
 import { openai } from "@ai-sdk/openai";
 import { generateObject } from "ai";
-import { buildAnalysisPrompt, systemPrompt } from "@/prompts/gpt";
-import { seoReportSchema } from "@/lib/seo-schema";
+import { buildAnalysisPrompt, systemPrompt } from "../prompts/gpt";
+import { seoReportSchema } from "../lib/seoSchema";
 import { internal, api } from "./_generated/api";
 
 /**
@@ -23,7 +23,7 @@ export const runAnalysis = internalAction({
 
         try {
             // Get the job and its raw data
-            const job = await ctx.runQuery(api.scrapingJobs.getJobId, {
+            const job = await ctx.runQuery(api.scrapingJobs.getJobById, {
                 jobId: args.jobId,
             });
 
@@ -131,6 +131,18 @@ export const retryAnalysisOnly = action({
     },
     returns: v.null(),
     handler: async (ctx, args) => {
-        
-    }
-})
+        console.log("Retrying analysis only for job:", args.jobId);
+
+        // Reset job status and clear previous analysis results
+        await ctx.runMutation(internal.scrapingJobs.resetJobForAnalysisRetry, {
+            jobId: args.jobId,
+        });
+
+        // Run the analysis by calling the internal action
+        await ctx.runAction(internal.analysis.runAnalysis, {
+            jobId: args.jobId,
+        });
+
+        return null;
+    },
+});
