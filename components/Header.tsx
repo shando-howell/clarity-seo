@@ -6,6 +6,7 @@ import { useEffect, useState } from "react";
 import { Loader2, UserRound } from "lucide-react";
 import { AuthLoading, Unauthenticated, Authenticated } from "convex/react";
 import { SignInButton, UserButton } from "@clerk/nextjs";
+import { ThemeToggle } from "./ThemeToggle";
 import { Button } from "./ui/button";
 
 const Header = () => {
@@ -36,6 +37,8 @@ const Header = () => {
                             <span className="sr-only md:not-sr-only md:ml-2">Dashboard</span>
                         </Button>
                     </Link>
+
+                    <ThemeToggle />
 
                     <AuthLoading>
                         <Button variant="outline">

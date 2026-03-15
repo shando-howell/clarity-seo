@@ -3,6 +3,7 @@ import { ClerkProvider } from '@clerk/nextjs'
 import './globals.css'
 import Header from '@/components/Header'
 import ConvexClerkProvider from "@/components/ConvexProviderWithClerk";
+import { ThemeProvider } from '@/components/ThemeProvider';
 
 export const metadata: Metadata = {
   title: 'Clarity SEO',
@@ -19,8 +20,15 @@ export default function RootLayout({
       <body>
         <ClerkProvider>
           <ConvexClerkProvider>
-            <Header />
-            {children}
+            <ThemeProvider
+              attribute="class"
+              defaultTheme="system"
+              enableSystem
+              disableTransitionOnChange
+            >
+              <Header />
+              {children}
+            </ThemeProvider>
           </ConvexClerkProvider>
         </ClerkProvider>
       </body>
