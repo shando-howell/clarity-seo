@@ -354,6 +354,4 @@ export const deleteJob = mutation({
         await ctx.db.delete(args.jobId);
         return null;
     },
-});
-
-           
+});    
