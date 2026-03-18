@@ -122,7 +122,7 @@ export function KeyMetricsGrid({ seoReport }: KeyMetricsGridProps) {
       </Card>
 
       {/* Competitors */}
-      <Card className="relative overflow-hidden border bg-gradient-to-br from-purple-50 to-violet-50 dark:from-purple-950/30 dark:to-violet-950/30 group hover:shadow-md transition-all duration-300">
+      <Card className="relative overflow-hidden border group hover:shadow-md transition-all duration-300">
         <CardContent className="p-6 relative">
           <div className="flex items-center justify-between mb-4">
             <div>
@@ -136,11 +136,11 @@ export function KeyMetricsGrid({ seoReport }: KeyMetricsGridProps) {
           </div>
           <div className="flex-1">
             {seoReport?.competitors && seoReport.competitors.length > 0 ? (
-              <div className="space-y-1 max-h-24 overflow-y-auto">
+              <div className="space-y-1 max-h-24 overflow-y-auto bg-background">
                 {seoReport.competitors.map((competitor, index) => (
                   <div
                     key={index}
-                    className="flex items-center justify-between text-xs bg-purple-50 dark:bg-purple-900/20 px-2 py-1 rounded"
+                    className="flex items-center justify-between text-xs px-2 py-1 rounded"
                   >
                     <span className="truncate flex-1 mr-2 font-medium">
                       {competitor.name}
