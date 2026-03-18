@@ -69,9 +69,6 @@ export function SourceDistributionChart({
     <Card className="xl:col-span-2 border bg-gradient-to-br from-card to-card/95">
       <CardHeader className="pb-6">
         <div className="flex items-center gap-3">
-          <div className="p-2 rounded-full bg-primary/10">
-            <Globe className="h-5 w-5 text-primary" />
-          </div>
           <div>
             <CardTitle className="text-xl">Source Types Distribution</CardTitle>
             <CardDescription className="text-base">
@@ -81,7 +78,7 @@ export function SourceDistributionChart({
         </div>
       </CardHeader>
       <CardContent>
-        <div className="grid md:grid-cols-2 gap-8 items-center">
+        <div className="grid sm:grid-cols-2 grid-cols-1 gap-8 items-center">
           <ChartContainer
             config={Object.fromEntries(
               sourceTypeEntries.map((e) => [

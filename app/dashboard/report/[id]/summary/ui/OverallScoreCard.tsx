@@ -47,7 +47,7 @@ export function OverallScoreCard({ seoReport }: OverallScoreCardProps) {
               <span className="font-semibold text-foreground">
                 {formatNumber(seoReport?.meta?.data_sources_count)}
               </span>{" "}
-              sources across multiple domains and platforms
+              sources across multiple domains and platforms.
             </p>
             <div className="flex sm:flex-row flex-col items-center gap-4 pt-2">
               <Badge variant="secondary" className="px-4 py-2 text-sm">

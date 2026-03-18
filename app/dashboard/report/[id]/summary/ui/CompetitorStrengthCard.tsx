@@ -9,7 +9,7 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Users, Award } from "lucide-react";
+import { Award } from "lucide-react";
 import { SeoReport } from "@/lib/seoSchema";
 
 interface CompetitorStrengthCardProps {
@@ -30,9 +30,6 @@ export function CompetitorStrengthCard({
     <Card className="border bg-gradient-to-br from-card to-card/95">
       <CardHeader className="pb-6">
         <div className="flex items-center gap-3">
-          <div className="p-2 rounded-full bg-orange-100 dark:bg-orange-900/50">
-            <Users className="h-5 w-5 text-orange-600 dark:text-orange-400" />
-          </div>
           <div>
             <CardTitle className="text-xl">Competitor Strength</CardTitle>
             <CardDescription className="text-base">

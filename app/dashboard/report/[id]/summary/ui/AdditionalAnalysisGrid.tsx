@@ -37,9 +37,6 @@ export function AdditionalAnalysisGrid({
       <Card className="border bg-gradient-to-br from-card to-card/95">
         <CardHeader className="pb-6">
           <div className="flex items-center gap-3">
-            <div className="p-3 rounded-full bg-gradient-to-br from-indigo-100 to-purple-100 dark:from-indigo-900/50 dark:to-purple-900/50">
-              <Globe className="h-6 w-6 text-indigo-600 dark:text-indigo-400" />
-            </div>
             <div>
               <CardTitle className="text-2xl">Backlink Sources</CardTitle>
               <CardDescription className="text-base">
