@@ -161,9 +161,6 @@ export function AdditionalAnalysisGrid({
       <Card className="border bg-gradient-to-br from-card to-card/95">
         <CardHeader className="pb-6">
           <div className="flex items-center gap-3">
-            <div className="p-3 rounded-full bg-gradient-to-br from-teal-100 to-cyan-100 dark:from-teal-900/50 dark:to-cyan-900/50">
-              <Search className="h-6 w-6 text-teal-600 dark:text-teal-400" />
-            </div>
             <div>
               <CardTitle className="text-2xl">Content Analysis</CardTitle>
               <CardDescription className="text-base">

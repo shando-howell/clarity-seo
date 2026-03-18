@@ -63,7 +63,7 @@ export function OverallScoreCard({ seoReport }: OverallScoreCardProps) {
           <div className="text-center lg:text-right">
             <div className="relative inline-block">
               <div
-                className={`text-5xl lg:text-8xl font-bold ${getScoreGradient(score)} bg-clip-text text-transparent`}
+                className={`text-7xl lg:text-8xl font-bold ${getScoreGradient(score)} bg-clip-text text-transparent`}
               >
                 {score}
               </div>

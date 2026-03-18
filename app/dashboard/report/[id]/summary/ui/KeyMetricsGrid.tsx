@@ -49,8 +49,7 @@ export function KeyMetricsGrid({ seoReport }: KeyMetricsGridProps) {
       </Card>
 
       {/* Total Sources */}
-      <Card className="relative overflow-hidden border bg-gradient-to-br from-green-50 to-emerald-50 dark:from-green-950/30 dark:to-emerald-950/30 group hover:shadow-md transition-all duration-300">
-        <div className="absolute top-0 right-0 w-20 h-20 bg-green-400/10 rounded-full -translate-y-10 translate-x-10 group-hover:scale-150 transition-transform duration-500" />
+      <Card className="relative overflow-hidden border">
         <CardContent className="p-6 relative">
           <div className="flex items-center justify-between mb-4">
             <div>
@@ -61,9 +60,6 @@ export function KeyMetricsGrid({ seoReport }: KeyMetricsGridProps) {
                 Total Sources
               </div>
             </div>
-            <div className="p-3 rounded-full bg-green-100 dark:bg-green-900/50">
-              <Globe className="h-6 w-6 text-green-600 dark:text-green-400" />
-            </div>
           </div>
           <div className="flex-1">
             {seoReport?.inventory?.unique_domains &&
@@ -72,7 +68,7 @@ export function KeyMetricsGrid({ seoReport }: KeyMetricsGridProps) {
                 {seoReport.inventory.unique_domains.map((domain, index) => (
                   <div
                     key={index}
-                    className="text-xs text-muted-foreground truncate bg-green-50 dark:bg-green-900/20 px-2 py-1 rounded"
+                    className="text-xs text-muted-foreground truncate px-2 py-1 rounded"
                   >
                     {domain}
                   </div>
@@ -88,8 +84,7 @@ export function KeyMetricsGrid({ seoReport }: KeyMetricsGridProps) {
       </Card>
 
       {/* Unique Domains */}
-      <Card className="relative overflow-hidden border bg-gradient-to-br from-orange-50 to-amber-50 dark:from-orange-950/30 dark:to-amber-950/30 group hover:shadow-md transition-all duration-300">
-        <div className="absolute top-0 right-0 w-20 h-20 bg-orange-400/10 rounded-full -translate-y-10 translate-x-10 group-hover:scale-150 transition-transform duration-500" />
+      <Card className="relative overflow-hidden border group hover:shadow-md transition-all duration-300">
         <CardContent className="p-6 relative">
           <div className="flex items-center justify-between mb-4">
             <div>
@@ -100,9 +95,6 @@ export function KeyMetricsGrid({ seoReport }: KeyMetricsGridProps) {
                 Unique Domains
               </div>
             </div>
-            <div className="p-3 rounded-full bg-orange-100 dark:bg-orange-900/50">
-              <Target className="h-6 w-6 text-orange-600 dark:text-orange-400" />
-            </div>
           </div>
           <div className="flex-1 space-y-1 max-h-24 overflow-y-auto">
             {Object.entries(seoReport?.inventory?.source_types || {})
@@ -112,7 +104,7 @@ export function KeyMetricsGrid({ seoReport }: KeyMetricsGridProps) {
               .map(([type, sources]) => (
                 <div
                   key={type}
-                  className="flex items-center justify-between text-xs bg-orange-50 dark:bg-orange-900/20 px-2 py-1 rounded"
+                  className="flex items-center justify-between text-xs px-2 py-1 rounded"
                 >
                   <span className="capitalize text-muted-foreground">
                     {type.replace(/_/g, " ")}
@@ -131,7 +123,6 @@ export function KeyMetricsGrid({ seoReport }: KeyMetricsGridProps) {
 
       {/* Competitors */}
       <Card className="relative overflow-hidden border bg-gradient-to-br from-purple-50 to-violet-50 dark:from-purple-950/30 dark:to-violet-950/30 group hover:shadow-md transition-all duration-300">
-        <div className="absolute top-0 right-0 w-20 h-20 bg-purple-400/10 rounded-full -translate-y-10 translate-x-10 group-hover:scale-150 transition-transform duration-500" />
         <CardContent className="p-6 relative">
           <div className="flex items-center justify-between mb-4">
             <div>
@@ -141,9 +132,6 @@ export function KeyMetricsGrid({ seoReport }: KeyMetricsGridProps) {
               <div className="text-sm font-medium text-muted-foreground">
                 Competitors
               </div>
-            </div>
-            <div className="p-3 rounded-full bg-purple-100 dark:bg-purple-900/50">
-              <Users className="h-6 w-6 text-purple-600 dark:text-purple-400" />
             </div>
           </div>
           <div className="flex-1">

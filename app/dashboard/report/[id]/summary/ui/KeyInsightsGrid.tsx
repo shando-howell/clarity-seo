@@ -66,9 +66,6 @@ export function KeyInsightsGrid({ seoReport }: KeyInsightsGridProps) {
       <Card className="border bg-gradient-to-br from-card to-card/95">
         <CardHeader className="pb-6">
           <div className="flex items-center gap-3">
-            <div className="p-3 rounded-full bg-gradient-to-br from-red-100 to-pink-100 dark:from-red-900/50 dark:to-pink-900/50">
-              <AlertTriangle className="h-6 w-6 text-red-600 dark:text-red-400" />
-            </div>
             <div>
               <CardTitle className="text-2xl text-red-600 dark:text-red-400">
                 Critical Issues
@@ -115,9 +112,6 @@ export function KeyInsightsGrid({ seoReport }: KeyInsightsGridProps) {
       <Card className="border bg-gradient-to-br from-card to-card/95">
         <CardHeader className="pb-6">
           <div className="flex items-center gap-3">
-            <div className="p-3 rounded-full bg-gradient-to-br from-blue-100 to-cyan-100 dark:from-blue-900/50 dark:to-cyan-900/50">
-              <TrendingUp className="h-6 w-6 text-blue-600 dark:text-blue-400" />
-            </div>
             <div>
               <CardTitle className="text-2xl text-blue-600 dark:text-blue-400">
                 Quick Wins
