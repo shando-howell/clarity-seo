@@ -176,7 +176,7 @@ export default function ReportsTable() {
       </div>
 
       {/* Summary Stats */}
-      <div className="mt-6 flex items-center justify-between text-sm text-muted-foreground">
+      <div className="mt-6 flex sm:flex-row flex-col items-center justify-between text-sm text-muted-foreground">
         <div className="flex items-center gap-4">
           <div className="flex items-center gap-2">
             <TrendingUp className="w-4 h-4" />
@@ -194,7 +194,7 @@ export default function ReportsTable() {
             </div>
           )}
         </div>
-        <div className="text-xs">Click any report to view details</div>
+        <div className="text-xs py-2">Click any report to view details</div>
       </div>
     </div>
   );
