@@ -37,7 +37,7 @@ export function OverallScoreCard({ seoReport }: OverallScoreCardProps) {
   return (
     <Card className="border-none shadow-2xl relative overflow-hidden">
       <CardContent className="p-8 lg:p-12 relative">
-        <div className="grid lg:grid-cols-2 gap-8 items-center">
+        <div className="grid sm:grid-cols-2 grid-cols-1 gap-8 items-center">
           <div className="space-y-4">
             <h2 className="text-3xl lg:text-4xl font-bold tracking-tight">
               Overall SEO Score
@@ -49,7 +49,7 @@ export function OverallScoreCard({ seoReport }: OverallScoreCardProps) {
               </span>{" "}
               sources across multiple domains and platforms
             </p>
-            <div className="flex items-center gap-4 pt-2">
+            <div className="flex sm:flex-row flex-col items-center gap-4 pt-2">
               <Badge variant="secondary" className="px-4 py-2 text-sm">
                 <Award className="h-4 w-4 mr-2" />
                 Professional Analysis
@@ -63,11 +63,11 @@ export function OverallScoreCard({ seoReport }: OverallScoreCardProps) {
           <div className="text-center lg:text-right">
             <div className="relative inline-block">
               <div
-                className={`text-8xl lg:text-9xl font-bold ${getScoreGradient(score)} bg-clip-text text-transparent`}
+                className={`text-5xl lg:text-8xl font-bold ${getScoreGradient(score)} bg-clip-text text-transparent`}
               >
                 {score}
               </div>
-              <div className="absolute -bottom-2 right-0 text-2xl font-bold text-muted-foreground">
+              <div className="absolute -bottom-5 right-0 text-2xl font-bold text-muted-foreground">
                 /100
               </div>
             </div>
