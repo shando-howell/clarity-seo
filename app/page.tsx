@@ -11,10 +11,10 @@ export default async function Home() {
       <div className="sm:py-2 py-1 sm:text-6xl text-4xl text-foreground items-center text-center sm:m-16 m-12">
         <h1>Gain SEO Clarity</h1>
       </div>
-      <div className="items-center text-center sm: py-4 py-2">
+      <div className="items-center text-center sm:py-4 py-2">
         {userId ? 
-          <Link href="/dashboard">
-            Generate a report.
+          <Link href="/dashboard" className="bg-foreground p-4 text-background">
+            Generate A Report
           </Link>
         : <SignInButton
             mode="modal"

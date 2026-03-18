@@ -50,7 +50,7 @@ function Dashboard() {
           <Card className="relative overflow-hidden border-0 shadow-2xl backdrop-blur-sm">
             <CardHeader className="text-center pb-6 relative">
               <CardDescription className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-                Generate Report
+                Generate A Report
               </CardDescription>
             </CardHeader>
             <CardContent className="relative">
@@ -61,7 +61,7 @@ function Dashboard() {
                       value={prompt}
                       onChange={(e) => setPrompt(e.target.value)}
                       placeholder="Enter a name, website, business, etc."
-                      className="pl-14 h-14 text-base border-2 border-blue-200 dark:border-blue-800 focus:border-blue-500 dark:focus:border-blue-400 bg-white/80 dark:bg-gray-900/80 backdrop-blur-sm shadow-sm w-full"
+                      className="px-4 h-14 text-base border-2 border-blue-200 dark:border-blue-800 focus:border-blue-500 dark:focus:border-blue-400 bg-white/80 dark:bg-gray-900/80 backdrop-blur-sm shadow-sm w-full"
                       disabled={isLoading}
                     />
                   </div>
