@@ -21,9 +21,6 @@ export function KeyInsightsGrid({ seoReport }: KeyInsightsGridProps) {
       <Card className="border bg-gradient-to-br from-card to-card/95">
         <CardHeader className="pb-6">
           <div className="flex items-center gap-3">
-            <div className="p-3 rounded-full bg-gradient-to-br from-green-100 to-emerald-100 dark:from-green-900/50 dark:to-emerald-900/50">
-              <CheckCircle className="h-6 w-6 text-green-600 dark:text-green-400" />
-            </div>
             <div>
               <CardTitle className="text-2xl text-green-600 dark:text-green-400">
                 Key Strengths
@@ -43,9 +40,6 @@ export function KeyInsightsGrid({ seoReport }: KeyInsightsGridProps) {
                   className="p-4 rounded-xl border bg-gradient-to-br from-green-50 to-emerald-50 dark:from-green-950/30 dark:to-emerald-950/30 border-green-200 dark:border-green-800 hover:shadow-lg transition-all duration-300 group"
                 >
                   <div className="flex items-start gap-3">
-                    <div className="p-2 rounded-full bg-white/80 dark:bg-black/20 text-green-600 dark:text-green-400 flex-shrink-0">
-                      <CheckCircle className="h-4 w-4" />
-                    </div>
                     <div className="flex-1">
                       <p className="text-sm leading-relaxed font-medium text-green-900 dark:text-green-100">
                         {strength}

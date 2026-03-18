@@ -1,6 +1,5 @@
 "use client";
 
-import React from "react";
 import {
   Card,
   CardContent,
@@ -23,9 +22,6 @@ export function KeywordsAnalysisGrid({ seoReport }: KeywordsAnalysisGridProps) {
       <Card className="border bg-gradient-to-br from-card to-card/95 min-w-0 w-full">
         <CardHeader className="pb-4 sm:pb-6">
           <div className="flex items-start sm:items-center gap-3">
-            <div className="p-2 sm:p-3 rounded-full bg-gradient-to-br from-blue-100 to-cyan-100 dark:from-blue-900/50 dark:to-cyan-900/50 flex-shrink-0">
-              <Search className="h-5 w-5 sm:h-6 sm:w-6 text-blue-600 dark:text-blue-400" />
-            </div>
             <div className="min-w-0 flex-1">
               <CardTitle className="text-xl sm:text-2xl leading-tight">
                 Content Keywords

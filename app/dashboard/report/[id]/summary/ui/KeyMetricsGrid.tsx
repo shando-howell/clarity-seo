@@ -13,8 +13,7 @@ export function KeyMetricsGrid({ seoReport }: KeyMetricsGridProps) {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6">
       {/* Keywords Found */}
-      <Card className="relative overflow-hidden border bg-gradient-to-br from-blue-50 to-cyan-50 dark:from-blue-950/30 dark:to-cyan-950/30 group hover:shadow-md transition-all duration-300">
-        <div className="absolute top-0 right-0 w-20 h-20 bg-blue-400/10 rounded-full -translate-y-10 translate-x-10 group-hover:scale-150 transition-transform duration-500" />
+      <Card className="relative overflow-hidden border group">
         <CardContent className="p-6 relative">
           <div className="flex items-center justify-between mb-4">
             <div>
@@ -24,9 +23,6 @@ export function KeyMetricsGrid({ seoReport }: KeyMetricsGridProps) {
               <div className="text-sm font-medium text-muted-foreground">
                 Keywords Found
               </div>
-            </div>
-            <div className="p-3 rounded-full bg-blue-100 dark:bg-blue-900/50">
-              <Search className="h-6 w-6 text-blue-600 dark:text-blue-400" />
             </div>
           </div>
           <div className="flex-1">

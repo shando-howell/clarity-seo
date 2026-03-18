@@ -24,12 +24,9 @@ interface RecommendationsCardProps {
 
 export function RecommendationsCard({ seoReport }: RecommendationsCardProps) {
   return (
-    <Card className="border bg-gradient-to-br from-card to-card/95">
+    <Card className="border">
       <CardHeader className="pb-6">
         <div className="flex items-center gap-3">
-          <div className="p-3 rounded-full bg-gradient-to-br from-amber-100 to-orange-100 dark:from-amber-900/50 dark:to-orange-900/50">
-            <Award className="h-6 w-6 text-amber-600 dark:text-amber-400" />
-          </div>
           <div>
             <CardTitle className="text-2xl">
               Actionable Recommendations

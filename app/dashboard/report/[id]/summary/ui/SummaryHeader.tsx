@@ -10,7 +10,7 @@ interface SummaryHeaderProps {
 
 export function SummaryHeader({ seoReport }: SummaryHeaderProps) {
   return (
-    <div className="border-b bg-gradient-to-r from-card via-card/95 to-card backdrop-blur-sm">
+    <div className="border-b backdrop-blur-sm">
       <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8">
         <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4 lg:gap-6">
           <div className="space-y-2">
