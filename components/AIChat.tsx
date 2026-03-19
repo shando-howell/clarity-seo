@@ -40,7 +40,7 @@ export default function AIChat({ seoReportId }: { seoReportId: string }) {
     <>
       {/* Chat Widget */}
       {isExpanded && (
-        <div className="fixed bottom-20 right-6 z-50 w-[300px] h-[400px] bg-white rounded-3xl shadow-2xl border border-gray-100 flex flex-col overflow-hidden">
+        <div className="fixed bottom-20 right-6 z-50 w-[400px] h-[500px] bg-white rounded-3xl shadow-2xl border border-gray-100 flex flex-col overflow-hidden">
           {/* Header */}
           <div className="flex items-center justify-between p-5 bg-foreground text-white rounded-t-3xl">
             <div className="flex items-center gap-3">
@@ -84,7 +84,7 @@ export default function AIChat({ seoReportId }: { seoReportId: string }) {
                   className={cn(
                     "max-w-[85%] px-4 py-3 rounded-2xl text-sm shadow-sm",
                     message.role === "user"
-                      ? "bg-gradient-to-r from-indigo-600 to-purple-600 text-white rounded-br-md"
+                      ? "bg-green-600 text-white rounded-br-md"
                       : "bg-gray-50 text-gray-800 border border-gray-200 rounded-bl-md"
                   )}
                 >
