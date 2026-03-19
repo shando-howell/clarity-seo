@@ -42,7 +42,7 @@ export default function AIChat({ seoReportId }: { seoReportId: string }) {
       {isExpanded && (
         <div className="fixed bottom-20 right-6 z-50 w-[335px] h-[520px] bg-white rounded-3xl shadow-2xl border border-gray-100 flex flex-col overflow-hidden">
           {/* Header */}
-          <div className="flex items-center justify-between p-5 bg-foreground text-white rounded-t-3xl">
+          <div className="flex items-center justify-between p-5 bg-foreground dark:bg-background text-white rounded-t-3xl">
             <div className="flex items-center gap-3">
               <div className="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center backdrop-blur-sm">
                 <MessageCircle className="w-5 h-5" />
@@ -227,13 +227,13 @@ export default function AIChat({ seoReportId }: { seoReportId: string }) {
                 value={input}
                 onChange={(e) => setInput(e.target.value)}
                 placeholder="Ask a question..."
-                className="flex-1 h-11 bg-white border-gray-200 rounded-xl focus:border-indigo-500 focus:ring-2 focus:ring-indigo-500/20"
+                className="flex-1 h-11 bg-white dark:text-gray-800 border-gray-200 rounded-xl focus:border-indigo-500 focus:ring-2 focus:ring-indigo-500/20"
                 disabled={isTyping}
               />
               <Button
                 type="submit"
                 disabled={!input.trim() || isTyping}
-                className="h-11 px-4 bg-foreground rounded-xl shadow-sm"
+                className="h-11 px-4 bg-green-600 dark:text-white rounded-xl shadow-sm"
               >
                 <Send className="w-4 h-4" />
               </Button>
@@ -249,9 +249,9 @@ export default function AIChat({ seoReportId }: { seoReportId: string }) {
           className="w-16 h-16 rounded-full bg-foreground transition-all duration-300 hover:scale-105"
         >
           {isExpanded ? (
-            <X className="w-6 h-6 text-white" />
+            <X className="w-6 h-6 text-white dark:text-black" />
           ) : (
-            <MessageCircle className="w-6 h-6 text-white" />
+            <MessageCircle className="w-6 h-6 text-white dark:text-black" />
           )}
         </Button>
       </div>
