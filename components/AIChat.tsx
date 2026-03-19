@@ -40,7 +40,7 @@ export default function AIChat({ seoReportId }: { seoReportId: string }) {
     <>
       {/* Chat Widget */}
       {isExpanded && (
-        <div className="fixed bottom-20 right-6 z-50 w-[330px] h-[520px] bg-white rounded-3xl shadow-2xl border border-gray-100 flex flex-col overflow-hidden">
+        <div className="fixed bottom-20 right-6 z-50 w-[335px] h-[520px] bg-white rounded-3xl shadow-2xl border border-gray-100 flex flex-col overflow-hidden">
           {/* Header */}
           <div className="flex items-center justify-between p-5 bg-foreground text-white rounded-t-3xl">
             <div className="flex items-center gap-3">
