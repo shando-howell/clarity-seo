@@ -12,7 +12,7 @@ import {
 } from "@/components/ui/card";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
-import { Plus, BarChart3, FileText, Sparkles, Loader2 } from "lucide-react";
+import { BarChart3, Loader2 } from "lucide-react";
 import ReportsTable from "@/components/ReportsTable";
 import { CountrySelector } from "@/components/CountrySelector";
 import { Authenticated, AuthLoading } from "convex/react";
