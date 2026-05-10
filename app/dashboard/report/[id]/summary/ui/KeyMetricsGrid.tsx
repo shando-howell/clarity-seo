@@ -2,7 +2,6 @@
 
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Search, Globe, Target, Users } from "lucide-react";
 import { SeoReport } from "@/lib/seoSchema";
 
 interface KeyMetricsGridProps {
@@ -17,11 +16,10 @@ export function KeyMetricsGrid({ seoReport }: KeyMetricsGridProps) {
         <CardContent className="p-6 relative">
           <div className="flex items-center justify-between mb-4">
             <div>
-              <div className="text-3xl font-bold text-blue-600 dark:text-blue-400">
-                {seoReport?.keywords?.content_keywords?.length ?? 0}
-              </div>
-              <div className="text-sm font-medium text-muted-foreground">
-                Keywords Found
+              <div className="text-xl font-bold">
+                <h2>
+                  There were {seoReport?.keywords?.content_keywords?.length ?? 0} keywords found.
+                </h2>
               </div>
             </div>
           </div>
@@ -53,11 +51,8 @@ export function KeyMetricsGrid({ seoReport }: KeyMetricsGridProps) {
         <CardContent className="p-6 relative">
           <div className="flex items-center justify-between mb-4">
             <div>
-              <div className="text-3xl font-bold text-green-600 dark:text-green-400">
-                {seoReport?.inventory?.total_sources ?? 0}
-              </div>
-              <div className="text-sm font-medium text-muted-foreground">
-                Total Sources
+              <div className="text-xl font-bold">
+                <h2>A total of {seoReport?.inventory?.total_sources ?? 0} sources were analyzed.</h2>
               </div>
             </div>
           </div>
@@ -88,11 +83,8 @@ export function KeyMetricsGrid({ seoReport }: KeyMetricsGridProps) {
         <CardContent className="p-6 relative">
           <div className="flex items-center justify-between mb-4">
             <div>
-              <div className="text-3xl font-bold text-orange-600 dark:text-orange-400">
-                {seoReport?.inventory?.unique_domains?.length ?? 0}
-              </div>
-              <div className="text-sm font-medium text-muted-foreground">
-                Unique Domains
+              <div className="text-xl font-bold">
+                <h2>Data was retrieved from {seoReport?.inventory?.unique_domains?.length ?? 0} unique domains.</h2>
               </div>
             </div>
           </div>
@@ -126,11 +118,8 @@ export function KeyMetricsGrid({ seoReport }: KeyMetricsGridProps) {
         <CardContent className="p-6 relative">
           <div className="flex items-center justify-between mb-4">
             <div>
-              <div className="text-3xl font-bold text-purple-600 dark:text-purple-400">
-                {seoReport?.competitors?.length ?? 0}
-              </div>
-              <div className="text-sm font-medium text-muted-foreground">
-                Competitors
+              <div className="text-xl font-bold">
+                <h2>{seoReport?.competitors?.length ?? 0} competitors were found.</h2>
               </div>
             </div>
           </div>
