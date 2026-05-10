@@ -1,6 +1,6 @@
 import { SignInButton } from "@clerk/nextjs";
 import { auth } from "@clerk/nextjs/server";
-import { CheckCircle } from "lucide-react";
+import { Check } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link"
 
@@ -54,32 +54,32 @@ export default async function Home() {
           </h3>
           <div className="space-y-5 py-10">
             <div className="flex items-center gap-2 text-xl">
-              <CheckCircle className="w-4 h-4 text-green-600"/>
-              <span>Comprehensive Search Engine Rank Page (SERP) Analysis</span>
+              <Check className="w-4 h-4 text-green-600"/>
+              <span>Comprehensive SERP Analysis</span>
             </div>
 
             <div className="flex items-center gap-2 text-xl">
-              <CheckCircle className="w-4 h-4 text-green-600"/>
+              <Check className="w-4 h-4 text-green-600"/>
               <span>Insights On Keyword Ranking</span>
             </div>
 
             <div className="flex items-center gap-2 text-xl">
-              <CheckCircle className="w-4 h-4 text-green-600"/>
+              <Check className="w-4 h-4 text-green-600"/>
               <span>Competitor Analysis</span>
             </div>
 
             <div className="flex items-center gap-2 text-xl">
-              <CheckCircle className="w-4 h-4 text-green-600"/>
+              <Check className="w-4 h-4 text-green-600"/>
               <span>Chat With AI About Your Report</span>
             </div>
 
             <div className="flex items-center gap-2 text-xl">
-              <CheckCircle className="w-4 h-4 text-green-600"/>
-              <span>Get Recommendations You Can Take Action On</span>
+              <Check className="w-4 h-4 text-green-600"/>
+              <span>Get Actionable Recommendations</span>
             </div>
           </div>
         </div>
-        <div className="p-12">
+        <div className="sm:py-2 lg:p-12">
           <Image src="/assets/images/Business-Meeting.jpg" className="rounded-4xl" height="900" width="600" alt="Business meeting" />
         </div>
       </div>
