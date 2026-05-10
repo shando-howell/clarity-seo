@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
-import { Loader2, UserRound } from "lucide-react";
+import { Eye, Loader2, UserRound } from "lucide-react";
 import { AuthLoading, Unauthenticated, Authenticated } from "convex/react";
 import { SignInButton, UserButton } from "@clerk/nextjs";
 import { ThemeToggle } from "./ThemeToggle";
@@ -24,8 +24,8 @@ const Header = () => {
             <div className="mx-auto flex h-14 max-w-7xl items-center gap-2 px-4">
                 <div className="flex flex-1 items-center gap-3">
                     <Link href="/" className="flex items-center gap-2">
-                        <span className="inline-flex size-6 items-center justify-center rounded-md bg-foreground text-background">
-                            C
+                        <span className="inline-flex size-6 items-center justify-center rounded-2xl bg-foreground text-background">
+                            <Eye />
                         </span>
                         <span className="text-sm font-semibold tracking-tight">Clarity SEO</span>
                     </Link>
